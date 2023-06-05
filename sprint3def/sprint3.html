@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="sprint3.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Eventos</h1>
+      <div class="searchbox">
+        <input
+          name="search"
+          id="searchbar"
+          type="text"
+          class="search-text"
+          onkeyup="search_eventos()"
+          placeholder="Pesquisar evento..."
+        />
+      </div>
+      <div id="displayEven" class="produtos3">
+        <ul class="eventos" id="eventos"></ul>
+      </div>
+      <div id="prioridade" style="display: 1none">
+        <p id="selecp">Selecionar Prioridade:</p>
+        <div id="radios">
+          <input type="radio" id="high" name="priority" value="high" />
+          <label for="high"> Alta</label>
+          <input type="radio" id="medium" name="priority" value="medium" />
+          <label for="medium">Média</label>
+          <input type="radio" id="low" name="priority" value="low" />
+          <label for="low">Baixa</label>
+        </div>
+      </div>
+    </div>
+    <script src="sprint3.js"></script>
+  </body>
+</html>
